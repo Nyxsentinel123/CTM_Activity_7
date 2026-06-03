@@ -1,0 +1,101 @@
+Welcome to
+
+▄▀█ █▀▄ █▀█ █░█ █▀▄▀█   █▀▀ ▀█▀ █▀▄▀█   █▀ █ █▀▄▀█
+█▀█ █▄▀ █▄█ ▀▄▀ █░▀░█   █▄▄ ░█░ █░▀░█   ▄█ █ █░▀░█
+developed by xen0byt3
+==================================================================
+
+Set Hostname: Nyxsentinel123
+
+Select Connection Type:
+1. Ethernet
+2. WLAN
+Enter choice (1 or 2): 1
+Set IP Address (Class A only): 100.1.1.1
+Subnet Mask: 255.0.0.0
+
+▄▀█ █▀▄ █▀█ █░█ █▀▄▀█   █▀▀ ▀█▀ █▀▄▀█   █▀ █ █▀▄▀█
+█▀█ █▄▀ █▄█ ▀▄▀ █░▀░█   █▄▄ ░█░ █░▀░█   ▄█ █ █░▀░█
+developed by xen0byt3
+==================================================================
+[Active Website]
+https://www.sinrevilo.moc
+https://www.xeno-byte.moc
+https://www.gi4nt-tcr.moc
+
+Welcome to the adoVM CTM Terminal Simulator. Type 'help' for commands.
+
+Nyxsentinel123@adoVM-$: help
+
+adoVM Linux Commands:
+ip a                              - Shows your IP address, interfaces
+ip route                          - Shows your gateway
+hostname -I                       - Shows your IP address quickly
+ping {target_IP or website}       - Checks if a host is reachable
+traceroute {target_IP or website} - Shows the path packets take (routers/hops)
+netstat -tulnp                    - Shows open ports and running services
+nslookup  {target_IP or website}  - Converts domain to IP address
+dig {target_IP or website}        - Advanced DNS lookup
+nmap {target_IP or website}       - Scan a target
+nmap -sV {target_IP or website}   - Detect services + versions
+nmap -A {target_IP or website}    - Aggressive scan (OS + services)
+arp-scan --localnet               - Finds devices in your network (like WiFi users)
+tcpdump -i {net_con}              - Capture live network traffic
+curl {website}                    - Fetch web data (used in APIs & testing)
+wget {file_name}                  - Download log files
+nc {ip_address} {port}            - Connect to a port
+whois {ip_address}                - Get domain info (owner, registrar)
+shutdown                          - Shutdown xen0byt3@adoVM
+
+Nyxsentinel123@adoVM-$: ip a
+Ethernet -> 100.1.1.1
+Nyxsentinel123@adoVM-$: ip route
+{ip}.{address}.{hidden}.{by}.{xen0byt3}
+Nyxsentinel123@adoVM-$: ping {target_IP}
+Reply from {target_IP}: bytes=32 time=10ms TTL=64
+Reply from {target_IP}: bytes=32 time=91ms TTL=64
+Reply from {target_IP}: bytes=32 time=13ms TTL=64
+Reply from {target_IP}: bytes=32 time=21ms TTL=64
+Nyxsentinel123@adoVM-$: traceroute {target_IP}
+
+traceroute to {target_IP}, 30 hops max, 60 byte packets
+
+1       192.168.1.86 (LAN Gateway)  20 ms  28 ms  87 ms
+2       192.168.1.22 (LAN Gateway)  17 ms  21 ms  50 ms
+3       10.0.3.215 (ISP Core Router)  8 ms  57 ms  92 ms
+4       10.0.4.240 (ISP Core Router)  15 ms  27 ms  46 ms
+5       10.0.5.250 (ISP Core Router)  18 ms  35 ms  46 ms
+6       168.125.245.81 (External Network)  12 ms  22 ms  40 ms
+7       168.77.103.220 (External Network)  24 ms  36 ms  99 ms
+
+Trace complete.
+Nyxsentinel123@adoVM-$: nslookup {target_IP}
+Unknown host
+Nyxsentinel123@adoVM-$: dig {target_IP}
+; <<>> DiG 9.18.0 <<>> {target_IP}
+;; global options: +cmd
+
+;; status: NXDOMAIN
+Nyxsentinel123@adoVM-$: nmap {target_IP}
+Host seems down or not found.
+Nyxsentinel123@adoVM-$: nmap -sV {target_IP}
+Host seems down or not found.
+Nyxsentinel123@adoVM-$: nmap -A {target_IP}nmap -A {target_IP}
+Host seems down or not found.
+Nyxsentinel123@adoVM-$: tcpdump -i {net_con}
+
+listening on {net_con}, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+14:35:14 IP 192.168.1.123 > 192.168.1.40: ICMP echo request, id 2552, seq 1, length 64
+14:35:14 IP 192.168.1.154.80 > 192.168.1.103.80: Flags [S], seq 5420, win 64240, length 0
+14:35:15 IP 192.168.1.61.3389 > 192.168.1.193.3389: Flags [S], seq 4473, win 64240, length 0
+14:35:15 IP 192.168.1.194.22 > 192.168.1.6.22: UDP, length 56
+14:35:16 IP 192.168.1.96 > 192.168.1.50: ICMP echo request, id 4738, seq 5, length 64
+14:35:16 IP 192.168.1.174.443 > 192.168.1.4.443: Flags [S], seq 2821, win 64240, length 0
+14:35:17 IP 192.168.1.215 > 192.168.1.205: ICMP echo request, id 2141, seq 7, length 64
+14:35:17 IP 192.168.1.156 > 192.168.1.100: ICMP echo request, id 4619, seq 8, length 64
+Nyxsentinel123@adoVM-$: arp-scan --localnet
+You don't have admin privileges to invoke this command
+Nyxsentinel123@adoVM-$: whois {ip_address}
+
+[WHOIS Lookup for {ip_address}]
